@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Dallas Ward's IT support and cybersecurity portfolio, resume, certifications, experience, and projects.">
+<title>Dallas Ward | IT & Cybersecurity Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#07111f;--panel:#0d1b2c;--panel2:#10243a;--line:#223c55;--cyan:#58e6ff;--text:#f4f8fc;--muted:#a9bacb;--green:#9af5c8}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% -15%,#1b4264 0,transparent 47%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(7,17,31,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(88,230,255,.13)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:13px 0}
+.brand{font-weight:900;letter-spacing:.04em}.brand span{color:var(--cyan)}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem}
+nav a{color:#d9e6f2}
+.hero{padding:76px 0 50px;display:grid;grid-template-columns:1.5fr .8fr;gap:32px;align-items:center}
+.kicker{color:var(--cyan);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:850}
+h1{font-size:clamp(2.7rem,7vw,5.2rem);line-height:.98;letter-spacing:-.055em;margin:14px 0 20px}
+h1 span{color:var(--cyan)}.lead{color:var(--muted);font-size:1.08rem;max-width:690px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 17px;border-radius:12px;border:1px solid var(--line);font-weight:800;color:var(--text);background:var(--panel2)}
+.btn.primary{background:var(--cyan);color:#04121c;border-color:var(--cyan)}.btn:hover{transform:translateY(-1px);text-decoration:none}
+.profile-card,.card,.contact-card{background:linear-gradient(145deg,rgba(16,36,58,.95),rgba(10,24,40,.96));border:1px solid var(--line);border-radius:20px;padding:24px}
+.profile-card{box-shadow:0 20px 65px #0004}
+.avatar{height:70px;width:70px;border-radius:20px;display:grid;place-items:center;font-size:1.5rem;font-weight:950;color:#06131d;background:linear-gradient(135deg,var(--cyan),var(--green));margin-bottom:18px}
+.profile-card h2{margin:0 0 3px}.muted{color:var(--muted)}.profile-card p{margin:6px 0}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 54px}
+.stat{padding:18px;border:1px solid var(--line);border-radius:15px;background:#0c1a2a}.stat strong{display:block;color:var(--cyan);font-size:1.15rem}.stat span{font-size:.86rem;color:var(--muted)}
+section{scroll-margin-top:88px;margin:0 0 58px}.section-head{margin-bottom:20px}.section-head h2{font-size:clamp(1.65rem,4vw,2.3rem);letter-spacing:-.03em;margin:0}.section-head p{margin:5px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card h3{margin:0 0 8px;font-size:1.12rem}.card p{color:var(--muted);margin:0 0 12px}.card ul{padding-left:20px;margin:10px 0 0;color:#d6e2ed}.card li{margin:6px 0}
+.taglist{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tag{font-size:.8rem;color:#dcebf6;border:1px solid #2a4b65;padding:5px 9px;border-radius:999px;background:#0b1a2b}
+.timeline{display:grid;gap:15px}.job{border-left:3px solid var(--cyan);padding:4px 0 4px 20px}.job h3{margin:0}.job .meta{font-size:.9rem;color:var(--cyan);margin:2px 0 9px}.job ul{margin:0;padding-left:20px;color:#d4e0eb}.job li{margin:5px 0}
+.cert-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.cert{border:1px solid var(--line);border-radius:13px;padding:13px;background:#0b1a2b}.cert strong{display:block;font-size:.94rem}.cert span{color:var(--muted);font-size:.82rem}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.contact-card{padding:18px}.contact-card small{display:block;color:var(--muted);margin-bottom:4px}
+footer{border-top:1px solid var(--line);padding:24px 0 36px;text-align:center;color:#8096ab;font-size:.85rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:48px}.quick{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.cert-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-grid{grid-template-columns:1fr}nav{gap:10px;font-size:.8rem}.nav{align-items:flex-start;flex-direction:column}.profile-card{max-width:none}}
+@media(max-width:430px){.cert-grid{grid-template-columns:1fr}.actions .btn{width:100%}.wrap{width:min(100% - 24px,1100px)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Dallas Ward home">DALLAS<span>WARD</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <div class="kicker">IT Support · Help Desk · Cybersecurity</div>
+      <h1>Dallas <span>Ward</span></h1>
+      <p class="lead">CompTIA Security+ certified cybersecurity student at Lone Star College with hands-on experience in Windows troubleshooting, network connectivity, user access, MFA, malware support, and help desk ticket workflows.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://canva.link/mmv2p1qpubpbmmd" target="_blank" rel="noopener noreferrer">View IT Projects ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/dallas-ward-225978311/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn" href="https://dt7tech.com" target="_blank" rel="noopener noreferrer">DT7Tech Website ↗</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <div class="avatar" aria-hidden="true">DW</div>
+      <h2>IT & Cybersecurity</h2>
+      <p class="muted">Houston, Texas</p>
+      <p>Student · IT Support · Founder</p>
+      <div class="taglist"><span class="tag">Security+</span><span class="tag">Help Desk</span><span class="tag">Networking</span><span class="tag">IAM / MFA</span></div>
+      <p style="margin-top:18px"><a href="mailto:Dallasjward07@gmail.com">Dallasjward07@gmail.com</a></p>
+      <p><a href="tel:+19253386200">925-338-6200</a></p>
+    </aside>
+  </div>
+
+  <div class="quick" aria-label="Portfolio highlights">
+    <div class="stat"><strong>CompTIA Security+</strong><span>Certified</span></div>
+    <div class="stat"><strong>3.70 GPA</strong><span>Lone Star College, listed on resume</span></div>
+    <div class="stat"><strong>Hands-on labs</strong><span>Help desk, identity, and networking</span></div>
+  </div>
+
+  <section id="about">
+    <div class="section-head"><h2>Professional Summary</h2><p>Resume overview</p></div>
+    <div class="card">
+      <p>CompTIA Security+ certified and Google IT Support certified cybersecurity student with experience troubleshooting Windows systems, network connectivity, user access, MFA, malware, and help desk tickets. Founder of D.A.D Triad 77, providing technical support and documenting troubleshooting steps and resolutions. Experience includes Microsoft Entra ID, Cisco networking, ticket prioritization, escalation, and customer communication.</p>
+      <p>Approach: understand the issue, document symptoms, test fixes methodically, verify service restoration, and escalate when needed.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head"><h2>Experience</h2><p>Work and technical support experience from my resume</p></div>
+    <div class="timeline">
+      <article class="card job">
+        <h3>Yeung Institute — IT Support & Healthcare Operations Intern</h3>
+        <div class="meta">September 2026 – Present</div>
+        <ul>
+          <li>Respond to and document IT support tickets involving hardware, software, and user technical issues.</li>
+          <li>Troubleshoot and assist with computers, printers, and other workplace technology.</li>
+          <li>Provide technical support to users and help resolve common hardware and software problems.</li>
+          <li>Assist with setting up, configuring, and maintaining computers and printers.</li>
+          <li>Support healthcare operations by helping staff maintain reliable access to technology and information systems.</li>
+          <li>Document technical issues and track support requests through ticketing workflows while maintaining professionalism, accuracy, and confidentiality.</li>
+        </ul>
+      </article>
+      <article class="card job">
+        <h3>D.A.D Triad 77 — Founder / IT Support Specialist</h3>
+        <div class="meta">July 2026 – Present</div>
+        <ul>
+          <li>Troubleshoot Windows, software, network connectivity, account-access, and end-user technical issues.</li>
+          <li>Create and work help desk-style tickets; document symptoms, troubleshooting steps, findings, and final resolutions.</li>
+          <li>Use a structured troubleshooting process to reproduce issues, test fixes, verify service restoration, and determine when escalation is needed.</li>
+          <li>Support Microsoft Entra ID, identity and access management, MFA, networking, and basic cybersecurity issues while communicating solutions clearly to users.</li>
+        </ul>
+      </article>
+      <article class="card job">
+        <h3>Chipotle — Crew Member</h3>
+        <div class="meta">October 2025 – Present</div>
+        <ul>
+          <li>Deliver customer service in a fast-paced environment and communicate clearly with customers and team members.</li>
+          <li>Demonstrate reliability, multitasking, accuracy, teamwork, and problem-solving under time-sensitive conditions.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head"><h2>Projects & Labs</h2><p>Open the project portfolio for supporting details and examples</p></div>
+    <div class="grid">
+      <article class="card">
+        <h3>Help Desk Ticket Troubleshooting</h3>
+        <p class="muted">Hands-on lab / practice</p>
+        <ul>
+          <li>Diagnosed common support issues including slow Windows performance, lost network connectivity, printer problems, and login/access issues.</li>
+          <li>Recorded issue details, troubleshooting actions, root causes, resolutions, and ticket status to practice service-desk documentation.</li>
+        </ul>
+        <div class="taglist"><span class="tag">Windows</span><span class="tag">Tickets</span><span class="tag">Troubleshooting</span></div>
+      </article>
+      <article class="card">
+        <h3>Microsoft Entra ID Cloud Identity Management</h3>
+        <p class="muted">Hands-on project</p>
+        <ul>
+          <li>Practiced user and access administration, identity management, MFA, and account-support tasks in Microsoft Entra ID.</li>
+        </ul>
+        <div class="taglist"><span class="tag">Entra ID</span><span class="tag">IAM</span><span class="tag">MFA</span></div>
+      </article>
+      <article class="card">
+        <h3>Cisco Networking</h3>
+        <p>Networking training and practice using Cisco tools and concepts.</p>
+        <div class="taglist"><span class="tag">Cisco Packet Tracer</span><span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">DHCP</span></div>
+      </article>
+      <article class="card">
+        <h3>D.A.D Triad 77 / DT7Tech</h3>
+        <p>My IT support venture and online presence for technical support and project work.</p>
+        <div class="actions"><a class="btn primary" href="https://dt7tech.com" target="_blank" rel="noopener noreferrer">Visit DT7Tech ↗</a></div>
+      </article>
+    </div>
+    <div class="actions" style="margin-top:18px">
+      <a class="btn primary" href="https://canva.link/mmv2p1qpubpbmmd" target="_blank" rel="noopener noreferrer">Open Full IT Project Portfolio ↗</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head"><h2>Technical Skills</h2><p>Skills listed on my resume</p></div>
+    <div class="card">
+      <div class="taglist">
+        <span class="tag">Help Desk & Ticketing</span><span class="tag">Windows & OS Troubleshooting</span><span class="tag">Hardware / Software Support</span><span class="tag">Network Troubleshooting</span><span class="tag">Microsoft Entra ID</span><span class="tag">Identity & Access Management</span><span class="tag">MFA</span><span class="tag">Password & Account Support</span><span class="tag">Malware Removal</span><span class="tag">Ticket Documentation</span><span class="tag">Escalation</span><span class="tag">Cisco Packet Tracer</span><span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">Customer Support</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="section-head"><h2>Certifications & Training</h2><p>Based on the resume provided</p></div>
+    <div class="cert-grid">
+      <div class="cert"><strong>CompTIA Security+</strong><span>Certified</span></div>
+      <div class="cert"><strong>Google IT Support</strong><span>Certified</span></div>
+      <div class="cert"><strong>Help Desk Administrator</strong><span>Certified</span></div>
+      <div class="cert"><strong>Cisco IT Essentials</strong><span>Certified</span></div>
+      <div class="cert"><strong>Cisco Networking</strong><span>Certified</span></div>
+      <div class="cert"><strong>Cisco Ethical Hacker</strong><span>Certified</span></div>
+      <div class="cert"><strong>Datacom — Service Desk Job Simulation</strong><span>Forage · August 2026</span></div>
+      <div class="cert"><strong>Commonwealth Bank — Cybersecurity Job Simulation</strong><span>Forage · August 2026</span></div>
+      <div class="cert"><strong>Mastercard — Cybersecurity Job Simulation</strong><span>Forage · August 2026</span></div>
+      <div class="cert"><strong>CompTIA A+</strong><span>In progress</span></div>
+      <div class="cert"><strong>CCNA</strong><span>In progress</span></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Datacom simulation focus</h3>
+      <p>Ticket categorization and prioritization, outage escalation, and professional client status communication.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head"><h2>Education & Activities</h2></div>
+    <div class="grid">
+      <article class="card">
+        <h3>Lone Star College</h3>
+        <p><strong>Associate of Applied Technology in Cybersecurity</strong></p>
+        <p>2025 – In Progress · GPA: 3.70</p>
+      </article>
+      <article class="card">
+        <h3>Campus Involvement & Honors</h3>
+        <ul>
+          <li>President’s List</li>
+          <li>Phi Theta Kappa Honor Society (PTK), Beta Lambda Mu Chapter — Member, 2026–Present</li>
+          <li>Lone Star Cybersecurity Club — 2025–Present</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><h2>Connect With Me</h2><p>Quick links designed to work well when opened from an NFC watch</p></div>
+    <div class="contact-grid">
+      <div class="contact-card"><small>Projects</small><strong><a href="https://canva.link/mmv2p1qpubpbmmd" target="_blank" rel="noopener noreferrer">View IT Projects ↗</a></strong></div>
+      <div class="contact-card"><small>Professional Profile</small><strong><a href="https://www.linkedin.com/in/dallas-ward-225978311/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></strong></div>
+      <div class="contact-card"><small>IT Website</small><strong><a href="https://dt7tech.com" target="_blank" rel="noopener noreferrer">DT7Tech.com ↗</a></strong></div>
+      <div class="contact-card"><small>Email</small><strong><a href="mailto:Dallasjward07@gmail.com">Dallasjward07@gmail.com</a></strong></div>
+      <div class="contact-card"><small>Phone</small><strong><a href="tel:+19253386200">925-338-6200</a></strong></div>
+      <div class="contact-card"><small>Location</small><strong>Houston, Texas</strong></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 Dallas Ward · IT Support & Cybersecurity Portfolio · Built for quick mobile and NFC access</div></footer>
+</body>
+</html>
